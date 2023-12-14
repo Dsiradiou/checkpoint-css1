@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste déroulante menant vers d'autres pages</title>
+    <script>
+        function redirection(selection) {
+            var choix = selection.value; // Récupération de la valeur de l'option sélectionnée
+            // Redirection vers la page correspondante en fonction de la valeur sélectionnée
+            if (choix === "option1") {
+                window.location.href = "propos.html"; // Remplacez "page1.html" par l'URL de votre première page
+            } else if (choix === "option2") {
+                window.location.href = "page2.html"; // Remplacez "page2.html" par l'URL de votre deuxième page
+            } else if (choix === "option3") {
+                window.location.href = "page3.html"; // Remplacez "page3.html" par l'URL de votre troisième page
+            }
+            // Ajoutez des conditions supplémentaires pour rediriger vers d'autres pages si nécessaire
+        }
+    </script>
+</head>
+<body>
+    <label for="choix">Sélectionnez une option :</label>
+    <select id="choix" name="choix" onchange="redirection(this)">
+        <option value="">Sélectionnez une option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <!-- Ajoutez autant d'options que nécessaire -->
+    </select>
+</body>
+<p></p>
+</html>

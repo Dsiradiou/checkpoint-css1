@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- des videos, tableaux , selection, plus d'images , d'autres pages -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        function redirection(selection){
+            var choix=selection.value;
+            if (choix === "propos"){
+                window.location.href = "propos.html";
+            }else if (choix === "travail") {
+                window.location.href = "checkpoint_html.html"; 
+            }else if (choix === "cv") {
+                window.location.href = "checkpoint_html.html"; 
+            }else if (choix === contact ){
+                window.location.href = "checkpoint_html.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> MA PAGE TEST</h1>
+        <label for="choix">Sélectionnez une option :</label>
+        <select name="choix" id="choix" onchange="redirection(this)"> Ou allons nous? 
+            <option value="">Sélectionnez une option</option>
+            <option value="propos">propos</option>
+            <option value="travail">Travail</option>
+            <option value="cv">CV</option>
+            <option value="contact">Contact</option>
+        </select>
+
+    </header>
+    <br>
+    <br>
+    <main>
+        <br>
+        <br>
+        <div>
+            <h1 id="travail" style="font-size: larger; background-color: skyblue;">travail</h1>
+            <p> Je ne suis actuellement travailleur, malgré cela j'ai eu a réalisé <br>
+                quelques projets telque:
+                <br>
+                <ul>
+                    <li> Création d'un mini site e-commerce</li>
+                    <li>etude et conception d'une maison connectée</li>
+                </ul>
+            </p>
+            <p>j'ai aussi aussi occupé un poste en tant que membre du comité d'organisation de l'IMPB</p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h1 id="cv" style="font-size: larger; background-color: skyblue;">cv</h1>
+            <img style="height: 700px; width: 500px;" src="cv.jpg" alt="cv.jpg">
+        </div>
+        <br>
+        <br>
+        <div>
+            <h1 id="contact" style="font-size: larger; background-color: skyblue;">contact</h1> 
+            <form class="form" action="#">
+                <label for="#">NOM</label>
+                <br>
+                <input type="text" name="NOM">
+                <br>
+                <label for="#">PRENOM</label>
+                <br>
+                <input type="text" name="PRENOM">
+                <br>
+                <label for="#">NUMERO DE TELEPHONE</label>
+                <br>
+                <input type="number" name="NUMERO DE TELEPHONE">
+                <br>
+                <button type="submit">soumettre</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h4>
+            thierno siradiou diallo <br>
+            +221 78 546 70 90 <br>
+            diallo2ts@gmail.com <br>
+            tous droit reservés 
+        </h4>
+    </footer>
+    
+</body>
+</html>

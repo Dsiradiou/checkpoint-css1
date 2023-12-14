@@ -1,0 +1,31 @@
+html{
+    font-family: "Roboto",sans-serif;
+    background-color: beige;
+}
+header{
+    text-align: center;
+    border: 2px double skyblue;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+nav{
+    text-align: center;
+}
+#cv{
+    text-align: center;
+    border: 5px double greenyellow;
+    border-radius: 10px;
+}
+#travail{
+    text-align: center;
+    border: 5px double greenyellow;
+    border-radius: 10px;
+}
+#contact{
+    text-align: center;
+    border: 5px double greenyellow;
+    border-radius: 10px;
+}
+.form input{
+    background-color: beige;
+}
